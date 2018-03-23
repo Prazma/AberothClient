@@ -10,3 +10,4 @@ function initializeClickListener(){
 function getFocusOnMouseDown(event){
    window.focus();
    document.getElementById("screen").focus();
+}
