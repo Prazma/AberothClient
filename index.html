@@ -7,8 +7,7 @@
       body {
         font-family: sans-serif;
         text-align: center;
-        background: #3C3428;
-        color: #fff;
+		background: #fff;
       }
       canvas {
         border: 1px solid #fff;
@@ -16,7 +15,6 @@
     </style>
   </head>
   <body>
-    <span id="mAlert">IN MAINTENANCE... (OH AND IF YOU HAVE PKED BEFORE, YOU CAN'T JOIN SO, DEPENDING ON YOUR IP, YOU MIGHT SEE THIS MESSAGE FOREVER!! hehe)</span>
     <div id="mainCont" style="display: block;">
       <script>
    window.autoLoad = {
@@ -33,7 +31,11 @@
       <canvas id="screen"></canvas>
     </div>
     <style>
-      #screen {border:20px ridge tan;image-rendering:optimizeSpeed;margin:0;padding:0;display:inline}
+      #screen {
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);	
+		border-radius: 6px;
+		background: #fff;
+	  }
     </style>
     <script src="src/aberoth.min.js"></script>
     <script src="src/jsfocus.js"></script>
