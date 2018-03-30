@@ -16,11 +16,20 @@
   </head>
   <body>
     <div id="mainCont" style="display: block;">
+	    <script>
+		    var bannSessionUser;
+		    if( localStorage.targetName ) {
+			bannSessionUser = localStorage.targetName;
+		    } else {
+			localStorage.targetName = "Ordinax";
+			bannSessionUser = localStorage.targetName;
+		    }
+	    </script>
       <script>
-   window.autoLoad = {
-   username: "1a25703add06ebe238422c59bcefbb4f",
-   password: "",
-   scaleup: 1,
+	      window.autoLoad = {
+		      username: bannSessionUser,
+		      password: "",
+		      scaleup: 1,
    scaledown: 1,
    encryptpassword: 0,
    screendefinition: 0,
